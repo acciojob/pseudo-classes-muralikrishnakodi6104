@@ -28,17 +28,32 @@
 			padding: 10px;
 			font-size: 22px;
 	}
-		li:nth-child(even){
-			background-color: gray;
-			width: 50%;
-			padding: 10px;
-			
-		}
-		li:nth-child(odd){
-			background-color:pink;
-			width: 50%;
-			padding: 10px;
-		}
+		/* --- Fixes for Odd/Even Alternating Items --- */
+li:nth-child(odd) {
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+}
+
+li:nth-child(even) {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+}
+
+/* --- Fix for: First/Last List Item Font Size --- */
+/* Specifically targets only the first (:first-child) and last (:last-child) items */
+li:first-child, 
+li:last-child {
+    font-size: 22px;
+}
+
+/* --- Fix for: Third-to-Last List Item Background --- */
+/* Targets the 3rd item counting from the bottom of the list */
+li:nth-last-child(3) {
+    background-color: pink;
+}
+
 		
 	</style>
 
