@@ -28,7 +28,7 @@
 			padding: 10px;
 			font-size: 22px;
 	}
-		/* --- Fixes for Odd/Even Alternating Items --- */
+		
 li:nth-child(odd) {
     background-color: white;
     width: 50%;
@@ -41,18 +41,16 @@ li:nth-child(even) {
     padding: 10px;
 }
 
-/* --- Fix for: First/Last List Item Font Size --- */
-/* Specifically targets only the first (:first-child) and last (:last-child) items */
-li:first-child, 
+li:first-child,
 li:last-child {
     font-size: 22px;
 }
 
-/* --- Fix for: Third-to-Last List Item Background --- */
-/* Targets the 3rd item counting from the bottom of the list */
+/* Third item from the bottom */
 li:nth-last-child(3) {
     background-color: pink;
 }
+
 
 		
 	</style>
